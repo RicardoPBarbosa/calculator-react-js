@@ -1,0 +1,22 @@
+body{background:#E5E5E5;margin:0;padding:0;width:100%;height:100%;font-family: 'Roboto', sans-serif;-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;}
+a{color:inherit;text-decoration:none;}
+#app{width:350px;height:600px;background:#D3D3D3;margin:auto;margin-top:100px;}
+#calculator{width:100%;height:100%;}
+#calculator > div{width:100%;}
+#mathtable{height:350px;font-size:20px;font-weight:300;color:#444;}
+.rows{width:100%;height:70px;}
+.numoperand{float:left;height:100%;width:87.5px;text-align:center;line-height:70px;cursor:pointer;}
+.numoperand:hover{background:#CCCCCC;}
+.rows:last-child > .numoperand:last-child{background:#68D800;color:white;}
+.rows:last-child > .numoperand:last-child:hover{background:#6FE600;}
+.rows:first-child{background:#DDDDDD;-webkit-box-shadow: 0px 2px 0px 0px rgba(204,204,204,1);-moz-box-shadow: 0px 2px 0px 0px rgba(204,204,204,1);box-shadow: 0px 2px 0px 0px rgba(204,204,204,1);}
+.rows:first-child  .numoperand:last-child{box-shadow:none;}
+.rows .numoperand:last-child{-webkit-box-shadow: -2px 0px 0px 0px rgba(204,204,204,1);-moz-box-shadow: -2px 0px 0px 0px rgba(204,204,204,1);box-shadow: -2px 0px 0px 0px rgba(204,204,204,1);background:#DDDDDD;}
+.rows .numoperand:last-child:hover{background:#CCCCCC;}
+#result{height:250px;background:#9DE919;background: rgb(157,233,25);background: -moz-linear-gradient(top, rgba(157,233,25,1) 0%, rgba(104,216,0,1) 100%);background: -webkit-linear-gradient(top, rgba(157,233,25,1) 0%,rgba(104,216,0,1) 100%);background: linear-gradient(to bottom, rgba(157,233,25,1) 0%,rgba(104,216,0,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9de919', endColorstr='#68d800',GradientType=0 );color:white;}
+p{margin:0;padding:0;}
+#result > div > p{text-align:right;padding:0px 30px;max-width:350px;word-wrap:break-word;}
+#result div{width:100%;height:50%;float:left;}
+#currentMath{font-weight:300;overflow:hidden;}
+#currentMath > p{padding-top:90px !important;max-height:100px;}
+#solution{font-size:50px;overflow:hidden;}
