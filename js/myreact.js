@@ -72,8 +72,8 @@ var Calculator = React.createClass({
 		reg = reg.split(" ");
 		var update = reg.filter(function(val){return val != ""});
 		update = update.solve();
-		console.log(update);
-		return update ? this.setState({answer:Math.round10(update, -3)}):this.setState({answer:"Error!"})
+		console.log("Full result: " + update);
+		return update ? this.setState({answer:Math.round10(update, -3), expression:""}) : this.setState({answer:"Error!", expression:""})
 	},
 
 	changeLight: function(theme){
